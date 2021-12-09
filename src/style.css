@@ -6,6 +6,7 @@
     --body-color:rgb(0, 0, 0);
     --body-color-lighter:rgb(23, 23, 23);
     --letter-color:rgb(255, 255, 255);
+    --contact-submit-button:rgb(81, 189, 81);
     /* --principal-color: rgb(255, 0, 166); */
 }
 
@@ -270,6 +271,83 @@ a:hover{
         width: 70%;
     }
 }
+
+/* stack page */
+
+.stack-list{
+    padding: 0;
+    text-align: center;
+}
+
+.stack-list li{
+    font-size: 20px;
+}
+
+/* contact page */
+
+.form-submit{
+    width: 50%;
+}
+
+.form-submit form{
+    width: 100%;
+}
+
+.form-submit .form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control{
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px 0;
+}
+
+.form-row .form-control:focus,
+.form-submit textarea:focus{
+    background-color: yellow;
+}
+
+.form-submit textarea{
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    border: none;
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+form button{
+    width: 100%;
+    background-color: var(--contact-submit-button);
+    color: var(--letter-color);
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+    .form-submit{
+        width: 80%;
+    }
+    .form-submit .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+
 
 
 
